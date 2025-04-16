@@ -5,14 +5,16 @@
     "private":true,
     "description":"",
     "dependencies":{
-        "coldbox":"^7.0.0"
+        "coldbox":"^7.3.0"
     },
     "devDependencies":{
-        "testbox":"*"
+        "testbox":"*",
+        "cbjavaloader":"^2.2.0+1"
     },
     "installPaths":{
-        "coldbox":"coldbox",
-        "testbox":"testbox"
+        "coldbox":"coldbox/",
+        "testbox":"testbox/",
+        "cbjavaloader":"modules/cbjavaloader/"
     },
     "testbox":{
         "runner":"http://localhost:60299/tests/runner.cfm"

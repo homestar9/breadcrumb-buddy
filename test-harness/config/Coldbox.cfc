@@ -70,6 +70,11 @@
 			info = [ "coldbox.system" ]
 		};
 
+        // Module Settings
+        moduleSettings = {
+            // see modules/breadcrumb-buddy.cfc
+        }
+
 	}
 
 	/**
@@ -88,5 +93,20 @@
         // Reload all interceptors with new mixins if available.
         controller.getInterceptorService().announce( "cbLoadInterceptorHelpers" )
 	}
+
+
+    function development() {
+        moduleSettings.cbjavaloader = {
+            // The array paths to load
+            loadPaths = [
+                "#controller.getAppRootPath()#tests/resources/lib/jsoup-1.19.1.jar" 
+            ],
+            // Load ColdFusion classes with loader
+            loadColdFusionClassPath = false,
+            // Whether or not the source is trusted, i.e. it is going to change? Defaults to false, so changes will be recompiled and loaded
+            trustedSource = false
+        }
+
+    }
 
 }

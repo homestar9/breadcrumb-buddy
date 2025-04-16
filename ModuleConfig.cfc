@@ -6,27 +6,45 @@
 component {
 
 	// Module Properties
-	this.title 				= "@MODULE_NAME@";
-	this.author 			= "Ortus Solutions";
-	this.webURL 			= "https://www.ortussolutions.com";
-	this.description 		= "@MODULE_DESCRIPTION@";
-	this.version 			= "@build.version@+@build.number@";
+	this.title 				= "breadcrumb-buddy";
+	this.author 			= "Angry Sam Productions, Inc.";
+	this.webURL 			= "https://www.angrysam.com";
+	this.description 		= "Handles breadcrumb navigation for ColdBox apps";
+	this.version 			= "1.0.0";
 
 	// Model Namespace
-	this.modelNamespace		= "@MODULE_SLUG@";
+	this.modelNamespace		= "breadcrumb-buddy";
 
 	// CF Mapping
-	this.cfmapping			= "@MODULE_SLUG@";
+	this.cfmapping			= "breadcrumb-buddy";
 
 	// Dependencies
 	this.dependencies 		= [];
+
+    // Application helper
+    this.applicationHelper 	= [ "helpers/Mixins.cfm" ];
 
 	/**
 	 * Configure Module
 	 */
 	function configure(){
 		settings = {
-
+            // Override view if desired
+            "view" = "breadcrumbs/index",
+            // Override view module if desired
+            "viewModule" = "breadcrumb-buddy",
+            // if no matching rule found, default to this event
+            "defaultEvent": "main.index",
+            // Event-Based breadcrumb rules
+            "events" = {
+                "main.index": function( trail, event, rc, prc ) {
+                    trail.push( "Home", event.buildLink( "" ) );
+                }
+            },
+            // Aliases for trail.parent() calls
+            "aliases": {
+                "home" = "main.index"
+            }
 		};
 	}
 

@@ -1,8 +1,7 @@
 {
-    "name":"breadcrumb-buddy-adobe@2023",
+    "name":"breadcrumb-buddy",
     "app":{
-        "serverHomeDirectory":".engine/adobe2023",
-        "cfengine":"adobe@2023"
+        "cfengine":"lucee@5"
     },
     "web":{
         "http":{
@@ -16,14 +15,8 @@
             "/moduleroot/breadcrumb-buddy":"../"
         }
     },
-    "jvm":{
-        "heapSize":"1024"
-    },
-    "openBrowser":"false",
+    "openBrowser":"true",
     "cfconfig":{
         "file":".cfconfig.json"
-    },
-    "scripts":{
-        "onServerInstall":"cfpm install zip,debugger"
     }
 }

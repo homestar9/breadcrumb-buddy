@@ -1,19 +1,19 @@
 {
-	"name":"@MODULE_NAME@-boxlang@1",
+    "name":"breadcrumb-buddy-boxlang@1",
     "app":{
         "serverHomeDirectory":".engine/boxlang",
         "cfengine":"boxlang@be"
     },
     "web":{
         "http":{
-            "port":"60299"
+            "port":"60320"
         },
         "rewrites":{
             "enable":"true"
         },
-		"webroot": "test-harness",
-		"aliases":{
-            "/moduleroot/@MODULE_NAME@":"../"
+        "webroot":"test-harness",
+        "aliases":{
+            "/moduleroot/breadcrumb-buddy":"../"
         }
     },
     "JVM":{
@@ -21,12 +21,11 @@
         "javaVersion":"openjdk21_jre",
         "args":"-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=8888"
     },
-	"openBrowser":"false",
+    "openBrowser":"false",
     "cfconfig":{
         "file":".cfconfig.json"
     },
-    "env":{
-    },
+    "env":{},
     "scripts":{
         "onServerInitialInstall":"install bx-compat-cfml --noSave"
     }

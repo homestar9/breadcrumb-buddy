@@ -1,11 +1,14 @@
 ﻿/**
 * My Event Handler Hint
 */
-component{
+component
+    extends="BaseHandler"
+{
 
 	// Index
 	any function index( event,rc, prc ){
-		event.setView( "main/index" );
+		prc.pages = variables._pages;
+        event.setView( "main/index" );
 	}
 
 }

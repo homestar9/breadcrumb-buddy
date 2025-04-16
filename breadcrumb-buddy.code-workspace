@@ -1,0 +1,27 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+        {
+            "path": "test-harness"
+        },
+        {
+            "path": "test-harness/tests"
+        }
+    ],
+    "settings": {
+        "cflint.enabled": false,
+        "files.exclude": {
+            "**/.git": true,
+            "**/.svn": true,
+            "**/.hg": true,
+            "**/.DS_Store": true,
+            "**/Thumbs.db": true,
+            "**/coldbox": true,
+            "**/.vscode": true,
+            "**/testbox": true
+        },
+        "explorerExclude.backup": {}
+    }
+}

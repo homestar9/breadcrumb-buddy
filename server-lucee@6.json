@@ -1,23 +1,23 @@
 {
-    "name":"@MODULE_NAME@-lucee@6",
+    "name":"breadcrumb-buddy-lucee@6",
     "app":{
         "serverHomeDirectory":".engine/lucee6",
         "cfengine":"lucee@6"
     },
     "web":{
         "http":{
-            "port":"60299"
+            "port":"60320"
         },
         "rewrites":{
             "enable":"true"
         },
-		"webroot": "test-harness",
-		"aliases":{
-            "/moduleroot/@MODULE_NAME@":"../"
+        "webroot":"test-harness",
+        "aliases":{
+            "/moduleroot/Breadcrumb-Buddy":"../"
         }
     },
     "openBrowser":"false",
-	"cfconfig": {
-		"file" : ".cfconfig.json"
-	}
+    "cfconfig":{
+        "file":".cfconfig.json"
+    }
 }
