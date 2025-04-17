@@ -4,7 +4,7 @@
 
 **Breadcrumb-Buddy** is a lightweight ColdBox module that simplifies breadcrumb navigation for your web applications. It generates dynamic breadcrumbs based on ColdBox events, supports aliases for intuitive usage, and allows recursive entity hierarchies (e.g., nested pages). It's plug-and-play with minimal setup, perfect for blogs, CMS, or any app needing clear navigation trails.
 
-This module was inspired from the very well thought out Laravel-Breadcrumbs(https://github.com/diglactic/laravel-breadcrumbs) package. This module is not a port of that package. It was designed to bring similar breadcrumb functionality to ColdBox.
+This module was inspired from the very well thought out [Laravel-Breadcrumbs](https://github.com/diglactic/laravel-breadcrumbs) package. This module is not a port of that package. It was designed to bring similar breadcrumb functionality to ColdBox.
 
 ## Requirements
 
