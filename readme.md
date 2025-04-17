@@ -1,4 +1,6 @@
-# Breadcrumb-Buddy (BETA)
+# Breadcrumb-Buddy (Public BETA)
+
+![Breadcrumb-Buddy Logo](https://github.com/homestar9/breadcrumb-buddy/blob/master/breadcrumb-buddy.svg?raw=true)
 
 **Breadcrumb-Buddy** is a lightweight ColdBox module that simplifies breadcrumb navigation for your web applications. It generates dynamic breadcrumbs based on ColdBox events, supports aliases for intuitive usage, and allows recursive entity hierarchies (e.g., nested pages). It's plug-and-play with minimal setup, perfect for blogs, CMS, or any app needing clear navigation trails.
 
