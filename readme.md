@@ -12,6 +12,7 @@ This module was inspired from the very well thought out [Laravel-Breadcrumbs](ht
 - **CFML Engines**: 
     - ACF 2021+
     - Lucee 5.3+
+    - Boxlang 1.0.0+
 
 ## Features
 
