@@ -48,7 +48,10 @@ component
      */
     function parent( required string parentEvent ) {
         var parentTrail = breadcrumbService.generate( parentEvent );
-        variables.crumbs = parentTrail.append( variables.crumbs, true );
+        // loop through the parent trail backwards and prepend each crumb
+        for ( var i = parentTrail.len(); i >= 1; i-- ) {
+            variables.crumbs.prepend( parentTrail[ i ] );
+        }
         return this;
     }
 
